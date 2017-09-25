@@ -1,0 +1,29 @@
+ .ui-drop-hover
+        {
+            background-color: #FFFF55 !important;
+            border: 2px solid #bbb;
+        }
+        .dragdiv
+        {
+            width: 180px;
+            height: 400px;
+            float: left;
+            border: 1px solid #bbb;
+        }
+        .dropdiv
+        {
+            width: 900px;
+            height: 700px;
+            background-color: #FFFFD4;
+            border: 1px solid #f2f2f2;
+        }
+        .dropdiv li
+        {
+            padding-left: 10px;
+        }
+        .main
+        {
+            width: auto;
+            height: auto;
+            /*border: 1px solid #bbb;*/
+        }
