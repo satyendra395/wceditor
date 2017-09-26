@@ -1,20 +1,22 @@
- .ui-drop-hover
+/* .ui-drop-hover
         {
             background-color: #FFFF55 !important;
             border: 2px solid #bbb;
-        }
+        }*/
         .dragdiv
         {
             width: 180px;
             height: 400px;
             float: left;
             border: 1px solid #bbb;
+            background-color: rgb(239, 237, 237); 
+
         }
         .dropdiv
         {
             width: 900px;
             height: 700px;
-            background-color: #FFFFD4;
+            background-color: #FCFCFC;
             border: 1px solid #f2f2f2;
         }
         .dropdiv li
@@ -26,4 +28,21 @@
             width: auto;
             height: auto;
             /*border: 1px solid #bbb;*/
+        }
+        .editing_element{
+            padding: 5px;              
+            margin-right: 5px;
+            width: 100%;
+        }
+        .detail_element, .fa{
+            color: #0A0A0A;
+            font-size: 18px;
+            margin: 5px;
+            border-right: 1px solid #292929;
+            border-bottom: none;
+            padding-top: 4px
+        }
+         .text_portion{
+            width: calc(100% - 10px);
+            margin: 5px 5px 10px 5px;
         }

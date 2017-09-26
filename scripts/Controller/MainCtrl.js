@@ -1,9 +1,9 @@
 $(function() {
-            $(".dragdiv span").draggable({
+            $(".dragdiv span.page_title").draggable({
                 appendTo: "body",
                 helper: "clone",
                 cursor: "move",
-                revert: "invalid"
+                revert: "invalid",
             });
  
             initDroppable($(".dropdiv"));
@@ -12,21 +12,23 @@ $(function() {
                     activeClass: "ui-state-default",
                     hoverClass: "ui-drop-hover",
                     accept: ":not(.ui-sortable-helper)",
- 
+
                     over: function(event, ui) {
                         var $this = $(this);
                     },
-                    drop: function(event, ui) {
-                        var $this = $(this);
-                        $("<span></span>").text(ui.draggable.text()).appendTo(this);
- 
-                    },
+
+                     drop: function( event, ui ) {
+                        var getvalue = $(ui.helper).attr('key');
+                        console.log('getvalue',getvalue);
+                         var eleToAppend = getvalue ;
+                            getwcEditorEle(eleToAppend);
+                     },                    
+                    
                     drag: function(event, ui){
                         var $this = $(this);
                         $("<span></span>").text(ui.draggable.text()).appendTo(this);
                     }
                 });
             }
-
-            
         });
+
